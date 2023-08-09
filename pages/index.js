@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
-import { getServerSideProps } from './todos'
+import { getServerSideProps } from './api/todos'
 
 export default function Home({ todos }) {
   const [todosState, setTodosState] = useState(todos)
