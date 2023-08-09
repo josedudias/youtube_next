@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
 import { getServerSideProps } from './todos'
 
@@ -13,7 +13,7 @@ export default function Home({ todos }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <h1>Todos</h1>
       {todosState.length === 0 ?
         (<div>Loading...</div>) : (
           todosState.map(todo => {
